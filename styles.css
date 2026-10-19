@@ -9,7 +9,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 html{background:var(--bg);color-scheme:dark;scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{margin:0;min-height:100vh;min-height:100dvh;overflow-x:clip;background:var(--bg);color:var(--text);font:400 1rem/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+body{margin:0;min-height:100vh;min-height:100dvh;overflow-x:clip;color:var(--text);font:400 1rem/1.5 var(--sans);-webkit-font-smoothing:antialiased}
 h1,h2,h3,p,ol,ul,figure,dl{margin:0}
 ol,ul{padding:0;list-style:none}
 img{max-width:100%;height:auto}
@@ -89,6 +89,14 @@ mark{background:none;color:var(--accent)}
 .clip{padding:0}
 .clip .cap{position:relative;width:100%;padding:.6rem .75rem;background:rgba(11,11,13,.66)}
 .foot .legal a{display:inline;min-height:0;text-decoration:underline;text-underline-offset:3px}
+
+
+/* soft amber glow behind the whole page (fixed, static, no motion) */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(ellipse 75% 50% at 50% -6%,rgba(255,184,28,.17),transparent 70%),
+    radial-gradient(ellipse 45% 45% at 0% 62%,rgba(255,184,28,.07),transparent 70%),
+    radial-gradient(ellipse 45% 45% at 100% 88%,rgba(255,184,28,.07),transparent 70%)}
 
 /* capability strip */
 .strip{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;gap:1px;background:var(--line)}
