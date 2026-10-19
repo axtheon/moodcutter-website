@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
 <title>MoodCutter: never lose the good part again</title>
 <meta name="description" content="MoodCutter finds the best moments in your videos and cuts them into captioned clips. Launching soon.">
 <link rel="canonical" href="https://moodcutter.com/">
@@ -14,9 +15,8 @@
 <meta name="twitter:title" content="MoodCutter: never lose the good part again">
 <meta name="twitter:description" content="MoodCutter finds the best moments in your videos and cuts them into captioned clips. Launching soon.">
 <meta name="twitter:image" content="https://moodcutter.com/assets/og.png">
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#050d2b">
+<meta name="theme-color" content="#0b0b0d">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -28,75 +28,135 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top"><img src="assets/logo-white.png" width="28" height="28" alt="">MoodCutter</a>
+    <nav class="nav" aria-label="Sections"><a href="#features">What it does</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
     <a class="btn-ghost" href="mailto:abdullah.dev4220@gmail.com?subject=Notify%20me%20when%20MoodCutter%20launches&body=Hi%2C%20please%20let%20me%20know%20when%20MoodCutter%20opens.">Get notified</a>
   </div>
 </header>
 
 <main id="top">
   <section class="wrap hero">
-    <div>
-      <p class="status"><i aria-hidden="true"></i>Launching soon</p>
-      <h1 class="display">Never ever lose the <span class="cut">good part</span> again!</h1>
-      <p class="lead">MoodCutter finds the moments in your videos that actually hit, so you spend time creating, not scrubbing through footage.</p>
-      <div class="cta">
-        <a class="btn" href="mailto:abdullah.dev4220@gmail.com?subject=Notify%20me%20when%20MoodCutter%20launches&body=Hi%2C%20please%20let%20me%20know%20when%20MoodCutter%20opens.">Get notified by email</a>
-        <p class="note">Opens your email app. We&rsquo;ll only write when MoodCutter opens.<br>Or just email <a href="mailto:abdullah.dev4220@gmail.com">abdullah.dev4220@gmail.com</a>.</p>
-      </div>
+    <p class="eyebrow" style="justify-content:center"><i aria-hidden="true"></i>Launching soon</p>
+    <h1 class="display">Never ever lose the <span class="cut">good part</span> again!</h1>
+    <p class="lead">MoodCutter finds the moments in your videos that actually hit, so you spend time creating, not scrubbing through footage.</p>
+    <div class="btns">
+      <a class="btn" href="mailto:abdullah.dev4220@gmail.com?subject=Notify%20me%20when%20MoodCutter%20launches&body=Hi%2C%20please%20let%20me%20know%20when%20MoodCutter%20opens.">Get notified by email</a>
+      <a class="btn-ghost" href="#how">See how it works</a>
     </div>
+    <p class="note">Opens your email app. We&rsquo;ll only write when MoodCutter opens.</p>
 
-    <figure class="tl">
-      <div class="track" role="img" aria-label="A video timeline with three segments marked as best moments">
-        <span class="seg s1"></span><span class="seg s2"></span><span class="seg s3"></span><span class="head"></span>
+    <figure class="app">
+      <div class="app-bar"><span>MoodCutter</span><span>Preview</span></div>
+      <div class="stage">
+        <div class="src"><img src="https://images.unsplash.com/photo-1713281318607-c0fbfc96d58c?auto=format&amp;fit=crop&amp;w=900&amp;h=506&amp;q=70" width="900" height="506" alt="A long video: a desk with a camera and a light, set up for filming" loading="lazy" decoding="async">
+          <span class="tag">Long video &middot; 01:24:00</span>
+          <svg class="play" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#0b0b0d" fill-opacity=".6" stroke="#f4f4f5" stroke-width="1.5"/><path d="M20 16l14 8-14 8z" fill="#f4f4f5"/></svg></div>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+        <div class="clip"><img src="https://images.unsplash.com/photo-1767474365536-ef81bfa24c8a?auto=format&amp;fit=crop&amp;w=420&amp;h=747&amp;q=70" width="420" height="747" alt="A short vertical clip of a microphone, with a caption on it" decoding="async">
+          <span class="tag">Short clip &middot; 00:11:42</span><p class="cap">Wait, <mark>say that again</mark></p></div>
       </div>
-      <div class="ends" aria-hidden="true"><span>00:00:00</span><span>01:24:00</span></div>
-      <ul class="moments">
-        <li class="m1"><i></i>Best moment<time>00:11:42</time></li>
-        <li class="m2"><i></i>Best moment<time>00:38:05</time></li>
-        <li class="m3"><i></i>Best moment<time>01:02:19</time></li>
-      </ul>
-      <figcaption>Illustration of a marked timeline.</figcaption>
+      <div class="app-tl">
+        <div class="track" role="img" aria-label="A video timeline with three segments marked as best moments">
+          <span class="seg s1"></span><span class="seg s2"></span><span class="seg s3"></span><span class="head"></span>
+        </div>
+        <div class="ends" aria-hidden="true"><span>00:00:00</span><span>01:24:00</span></div>
+        <ul class="moments">
+          <li class="m1"><i></i>Best moment<time>00:11:42</time></li>
+          <li class="m2"><i></i>Best moment<time>00:38:05</time></li>
+          <li class="m3"><i></i>Best moment<time>01:02:19</time></li>
+        </ul>
+      </div>
     </figure>
+    <p class="fine">Illustration of the product. Details may change before launch.</p>
   </section>
 
-  <section class="section" aria-labelledby="problem">
-    <div class="wrap split">
-      <h2 class="h2" id="problem" data-reveal>The problem</h2>
-      <p class="lead" data-reveal style="--d:.12s">You filmed a couple of hours. The part people will care about is maybe fifteen seconds of it. So you drag the timeline back and forth looking for that one laugh you remember, and half the time you still miss it. MoodCutter finds it in minutes, and it picks the moments you would have picked yourself.</p>
+  <div class="wrap" style="padding-bottom:4rem">
+    <ul class="strip"><li>Finds the moments</li><li>High-quality captions</li><li>Clean formatting</li><li>Ready-to-post clips</li></ul>
+  </div>
+
+  <section class="section" id="features" aria-labelledby="f-h">
+    <div class="wrap">
+      <div class="head2" data-reveal>
+        <p class="eyebrow"><i aria-hidden="true"></i>What it does</p>
+        <h2 class="h2" id="f-h">Stop hunting. Start posting.</h2>
+        <p class="lead">Hours of footage hide a handful of moments people will actually watch. MoodCutter finds them in minutes, and picks the ones you would have picked yourself.</p>
+      </div>
+      <div class="grid two">
+        <article class="card" data-reveal>
+          <div class="vis"><span class="tag">Illustration</span>
+            <div class="mini" aria-hidden="true"><span style="left:12%;width:8%"></span><span style="left:41%;width:12%"></span><span style="left:74%;width:7%"></span></div></div>
+          <div class="copy"><h3>It finds the good part</h3><p>Drop in a long video and MoodCutter marks the strongest moments, so you never scrub through hours of footage again.</p></div>
+        </article>
+        <article class="card" data-reveal style="--d:.12s">
+          <div class="vis"><span class="tag">Illustration</span><p class="bigcap" aria-hidden="true">That&rsquo;s the <mark>whole point</mark></p></div>
+          <div class="copy"><h3>Captions that look right</h3><p>Every clip is cut with high-quality captions and clean formatting, so it&rsquo;s ready to post the moment it&rsquo;s done.</p></div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="how">
+  <section class="section" id="how" aria-labelledby="h-h">
     <div class="wrap">
-      <h2 class="h2" id="how" data-reveal>How it works</h2>
+      <div class="head2" data-reveal>
+        <p class="eyebrow"><i aria-hidden="true"></i>How it works</p>
+        <h2 class="h2" id="h-h">From long video to finished clips</h2>
+      </div>
       <ol class="steps">
-        <li data-reveal><span class="num">01</span><h3>Upload your video</h3><p>Drop in the footage you already have. Long streams, podcasts, raw takes, whatever you&rsquo;ve got.</p></li>
+        <li data-reveal><span class="num">01</span><h3>Paste a link or upload your video</h3><p>Just paste the link or upload the video file. Long streams, podcasts, raw takes, whatever you&rsquo;ve got.</p></li>
         <li data-reveal style="--d:.12s"><span class="num">02</span><h3>MoodCutter finds the best moments</h3><p>It picks out the parts of your video that really land, so you don&rsquo;t have to go hunting for them.</p></li>
         <li data-reveal style="--d:.24s"><span class="num">03</span><h3>Get finished clips</h3><p>Every clip is cut with high-quality captions and clean formatting, so it&rsquo;s ready to post as soon as you are.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="creators">
-    <div class="wrap split">
-      <h2 class="h2" id="creators" data-reveal>Built for creators</h2>
-      <p class="lead" data-reveal style="--d:.12s">Made for YouTubers, streamers, podcasters and anyone posting short clips from long recordings. We&rsquo;re building the best clipping tool for this, and once you&rsquo;ve used it, going back to scrubbing by hand will feel painful. More features are coming soon.</p>
+  <section class="section" aria-labelledby="w-h">
+    <div class="wrap">
+      <div class="head2" data-reveal>
+        <p class="eyebrow"><i aria-hidden="true"></i>Built for creators</p>
+        <h2 class="h2" id="w-h">If you record long, you need this</h2>
+        <p class="lead">We&rsquo;re building the best clipping tool for people who make long videos. Once you&rsquo;ve used it, going back to scrubbing by hand will feel painful.</p>
+      </div>
+      <ul class="who">
+        <li data-reveal><h3>YouTubers</h3><p>Turn one long upload into the shorts that bring new people in.</p></li>
+        <li data-reveal style="--d:.08s"><h3>Streamers</h3><p>Clip your best moments before the stream gets buried.</p></li>
+        <li data-reveal style="--d:.16s"><h3>Podcasters</h3><p>Pull the quotable minute out of a two-hour episode.</p></li>
+        <li data-reveal style="--d:.24s"><h3>Short-form creators</h3><p>Spend your time on the idea, not on scrubbing footage.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="q-h">
+    <div class="wrap">
+      <div class="head2" data-reveal>
+        <p class="eyebrow"><i aria-hidden="true"></i>FAQ</p>
+        <h2 class="h2" id="q-h">Got questions?</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details><summary>How does MoodCutter work?</summary><p>You upload a video, MoodCutter finds the strongest moments, and you get finished clips back. We&rsquo;ll share more closer to launch.</p></details>
+        <details><summary>What can I upload?</summary><p>Long videos: streams, podcasts, interviews and raw footage. The full list of supported formats will be published at launch.</p></details>
+        <details><summary>Do the clips come with captions?</summary><p>Yes. Every clip is cut with high-quality captions and clean formatting.</p></details>
+        <details><summary>When does it launch?</summary><p>Soon. Send us an email and we&rsquo;ll tell you the day it opens.</p></details>
+        <details><summary>How much will it cost?</summary><p>Pricing isn&rsquo;t final yet. We&rsquo;ll share it at launch.</p></details>
+      </div>
     </div>
   </section>
 
   <section class="section closing" aria-labelledby="soon">
     <div class="wrap">
       <h2 class="h2" id="soon" data-reveal>The best way to clip your videos is almost here</h2>
-      <p class="lead" data-reveal style="--d:.12s;margin-top:1rem">Want to know the day it opens? Send us an email and we&rsquo;ll let you know.</p>
-      <a class="btn" href="mailto:abdullah.dev4220@gmail.com?subject=Notify%20me%20when%20MoodCutter%20launches&body=Hi%2C%20please%20let%20me%20know%20when%20MoodCutter%20opens.">Get notified by email</a>
+      <p class="lead" data-reveal style="--d:.12s">Want to know the day it opens? Send us an email and we&rsquo;ll let you know.</p>
+      <div class="btns"><a class="btn" href="mailto:abdullah.dev4220@gmail.com?subject=Notify%20me%20when%20MoodCutter%20launches&body=Hi%2C%20please%20let%20me%20know%20when%20MoodCutter%20opens.">Get notified by email</a></div>
     </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <span>&copy; MoodCutter</span>
-    <a href="mailto:abdullah.dev4220@gmail.com">abdullah.dev4220@gmail.com</a>
-    <a href="privacy.html">Privacy</a>
+    <div class="cols">
+      <div><a class="brand" href="#top"><img src="assets/logo-white.png" width="28" height="28" alt="">MoodCutter</a><p>Find the good part of every video. Launching soon.</p></div>
+      <div><h3>Product</h3><a href="#features">What it does</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div>
+      <div><h3>Contact</h3><a href="mailto:abdullah.dev4220@gmail.com">abdullah.dev4220@gmail.com</a><a href="privacy.html">Privacy</a></div>
+    </div>
+    <p class="legal">&copy; MoodCutter &middot; Photos by <a href="https://unsplash.com/@annaazart">Anna Zakharova</a> and <a href="https://unsplash.com/@hodgsons">Jacob Hodgson</a> on <a href="https://unsplash.com/">Unsplash</a></p>
   </div>
 </footer>
 </body>
